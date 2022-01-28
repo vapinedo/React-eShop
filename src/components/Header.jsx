@@ -1,9 +1,9 @@
 import React from 'react';
 import "@styles/Header.scss";
 
-const menu = "@icons/icon_menu.svg";
-const logo = "@logos/logo_yard_sale.svg";
-const shoppingCart = "@icons/icon_shopping_cart.svg";
+import menu from "@icons/icon_menu.svg";
+import logo from "@logos/logo_yard_sale.svg";
+import shoppingCart from "@icons/icon_shopping_cart.svg";
 
 export const Header = () => {
   return (
@@ -11,7 +11,7 @@ export const Header = () => {
       <img src={menu} alt="menu" className="menu" />
 
       <div className="navbar-left">
-        <img src={logo} alt="logo" className="logo" />
+        <img src={logo} alt="logo" className="nav-logo" />
         <ul>
           <li><a href="/">All</a></li>
           <li><a href="/">Clothes</a></li>
