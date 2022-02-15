@@ -15,11 +15,11 @@ export const useInitialState = () => {
                 cart: [...state.cart, payload],
                 total: state.total + payload.price
             });
-        }
+        } 
     };
 
     const removeFromCart = (payload) => {
-        const newCartState = state.cart.filter(product => product != payload);
+        const newCartState = state.cart.filter(product => product !== payload);
         setState({
             ...state,
             cart: [...newCartState],
